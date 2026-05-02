@@ -23,7 +23,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 
 
+# ---------------------------------------------------------------------------
 # Config
+# ---------------------------------------------------------------------------
 DATA_PATH = "data/processed/amazon_clean.csv"
 MODEL_SAVE_DIR = "models/saved"
 os.makedirs(MODEL_SAVE_DIR, exist_ok=True)
@@ -118,3 +120,4 @@ def predict(text: str, pipeline=None) -> dict:
 
 if __name__ == "__main__":
     train()
+
